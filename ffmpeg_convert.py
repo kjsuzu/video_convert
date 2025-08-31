@@ -118,11 +118,6 @@ def main():
         input_stream.video,
         audio_stream,
         output_file,
-        **{
-            'c:v': 'copy',
-            'c:a': c_a,
-            'b:a': '192k',
-        },
     )
     ffmpeg.run(output, overwrite_output=True)
 
